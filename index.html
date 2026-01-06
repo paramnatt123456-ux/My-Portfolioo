@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Param's Website</title>
+  
+<style>
+  
+body {
+      font-family: sans-serif;
+      text-align: center;
+      transition: background 0.3s ease;
+      padding: 50px;
+    }
+
+    /* THIS FIXES THE IMAGE SIZE */
+    #profilePic {
+      width: 150px !important;
+      height: 150px !important;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #1a73e8;
+      margin: 20px auto;
+      display: block;
+    }@keyframes lightningGlow {
+  from { box-shadow: 0 0 10px #ff9800; }
+  to { box-shadow: 0 0 30px #ffeb3b; }
+}
+.main-btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;   /* This makes buttons stack on top of each other */
+    margin: 20px auto; /* This adds the perfect spacing between them */
+    width: 220px;      /* Makes them a nice, easy-to-tap width */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+    /* DARK MODE STYLES */
+    .dark-theme {
+      background-color: #121212 !important;
+      color: white !important;
+    }
+#profilePic:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: 0.3s;
+    border-color: #ff9800; /* Changes the circle border to orange on touch */
+}
+ .Param {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    transition: 0.3s;
+ }
+.floating-x {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border: 2px solid #ff9800;
+    z-index: 1000;
+}
+
+.social-link:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+ .x-btn {
+    text-decoration: none;
+    background-color: #000;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    border: 2px solid #ff9800; /* Zenitsu orange border */
+    margin-top: 10px;
+}
+
+.x-btn:active {
+    transform: scale(0.95);
+    background-color: #333;
+}
+#profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff9800; /* Zenitsu Orange */
+    display: block;
+    margin: 20px auto;
+    /* The Glow Effect */
+    box-shadow: 0 0 20px #ff9800; 
+    animation: glow 2s infinite alternate;
+}
+
+/* Add this right below the #profilePic block */
+@keyframes Glow {
+  from { box-shadow: 0 0 10px #ff9800; }
+  to { box-shadow: 0 0 25px #ffeb3b; } /* Fades to lightning yellow */
+}
+/* This makes the buttons feel "clickable" on a phone */
+.main-btn:active, .x-btn:active {
+    transform: scale(0.95); /* Shrinks the button slightly when you tap it */
+    opacity: 0.9;           /* Makes it slightly dimmer */
+    transition: 0.1s;       /* Makes the movement quick and smooth */
+}
+.skills-container {
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: #ddd;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.skill-fill {
+    /* ... existing code ... */
+    animation: loadBars 2s ease-out forwards;
+    transform-origin: left;
+}
+
+@keyframes loadBars {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+.skill-fill {
+    color: white;
+    padding: 5px;
+    text-align: right;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Different colors for different skills */
+.html { width: 90%; background-color: #e44d26; }
+.css { width: 75%; background-color: #264de4; }
+.js { width: 40%; background-color: #f7df1e; color: black; }
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+.floating-x {
+    position: fixed; /* This makes it float */
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white !important;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff9800; /* Zenitsu Orange border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}</style>
+</head> 
+  <h1>Hello, I'm Param Singh</h1><p style="margin: 20px; color: #555; font-style: italic;">
+  I am a student from Punjab learning how to build websites. 
+  I love anime and technology!
+</p>
+
+
+  <img src=https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/03/zenitus-cover.jpg?q=50&fit=crop&w=480&h=270&dpr=1.e1f5fe id="profilePic">
+
+  <p>I am learning front-end development from scratch.</p>
+
+  <button id="colorBtn" class="main-btn">Change Color</button>
+  <button id="darkBtn" class="main-btn" style="background: #333;">Toggle Dark Mode</button>
+
+  <script>
+    const colorBtn = document.getElementById('colorBtn');
+    const darkBtn = document.getElementById('darkBtn');
+
+    // Light blue background
+    colorBtn.addEventListener('click', () => {
+      document.body.style.backgroundColor = "#e1f5fe";
+    });
+
+    // Dark mode toggle
+    darkBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+<div class="skills-container" style="padding: 20px; max-width: 300px; margin: 0 auto; text-align: left;">
+  <h3 style="color: #ff9800; text-align: center;">TECHNICAL MASTERY</h3>
+  
+  <p>HTML5</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div class="skill-fill" style="width: 90%; background: #e44d26; color: white; padding: 5px; text-align: right; border-radius: 20px; font-size: 12px;">90%</div>
+  </div>
+
+  <p style="margin-top: 10px;">CSS3</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div class="skill-fill" style="width: 75%; background: #264de4; color: white; padding: 5px; text-align: right; border-radius: 20px; font-size: 12px;">75%</div>
+  </div>
+
+  <p style="margin-top: 10px;">JavaScript</p>
+  <div style="background: #ddd; border-radius: 20px;">
+    <div class="skill-fill" style="width: 40%; background: #f7df1e; color: black; padding: 5px; text-align: right; border-radius: 20px; font-size: 12px;">40%</div>
+  </div>
+</div>
+<a href="https://x.com/IDontKn27881879" class="floating-x" target="_blank">X</a>
+</body>
+
+
+
+
+
+
+
+  
